@@ -1,4 +1,3 @@
-=============================================
 Convert NFD unicode filesystem to NFC unicode
 =============================================
 
@@ -11,18 +10,19 @@ but it can also contain file encoded in NFD mode.
 You can use this tool to convert NFD to NFC.
 
 
+
 Install
 =======
 
-::
 
-    $ pip install https://bitbucket.org/harobed/convert-nfd-unicode-filesystem-to-nfc-unicode/downloads/nfd2nfc-0.1.0.tar.gz
+
+    $ sudo python3 setup.py install
 
 
 Usage
 =====
 
-::
+
 
     $ nfd2nfc -h
     This tool can convert file system encoded in NFD mode to NFC mode.
@@ -39,13 +39,13 @@ Examples
 
 Convert on local file system (use it on GNU/Linux, not on Mac OS X) :
 
-::
+
 
     $ nfd2nfc /home/username/myproject/
 
 You can use ssh url syntax to fix unicode on remote host :
 
-::
+
 
     $ nfd2nfc ssh://foobar@example.com:2000:/home/foobar/www/
 
